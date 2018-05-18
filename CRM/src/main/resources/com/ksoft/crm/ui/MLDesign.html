@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta charset="UTF-8" name="vaadin-version" content="7.7.0">
+ </head> 
+ <body> 
+  <vaadin-horizontal-split-panel split-position="20%" locked> 
+   <vaadin-vertical-layout size-full> 
+    <vaadin-vertical-split-panel split-position="10%" locked> 
+     <vaadin-image size-full source="waters_edge.jpg" _id="image_left_top"></vaadin-image> 
+     <vaadin-vertical-layout spacing _id="left_vl" size-auto margin-left margin-top> 
+      <vaadin-horizontal-layout spacing style-name="card" _id="left_hl"> 
+       <vaadin-label size-auto plain-text :middle>
+         Filter Clients 
+       </vaadin-label> 
+       <vaadin-button style-name="borderless" plain-text _id="clear_filters_button" :middle :right>
+         Clear Filters 
+       </vaadin-button> 
+      </vaadin-horizontal-layout> 
+      <vaadin-label style-name="h3" size-auto plain-text _id="client_type_label">
+        Client Type 
+      </vaadin-label> 
+      <vaadin-check-box caption="Old" _id="check_box_old"></vaadin-check-box> 
+      <vaadin-check-box caption="Unknown" _id="check_box_unknown"></vaadin-check-box> 
+      <vaadin-check-box caption="New" _id="check_box_new"></vaadin-check-box> 
+     </vaadin-vertical-layout> 
+    </vaadin-vertical-split-panel> 
+   </vaadin-vertical-layout> 
+   <vaadin-vertical-layout size-full> 
+    <vaadin-vertical-split-panel split-position="10%" locked> 
+     <vaadin-horizontal-layout style-name="valo-menu-title" spacing size-full margin-left _id="console_label_view"> 
+      <vaadin-label style-name="huge" size-auto plain-text _id="console" :middle>
+        Client Management Console 
+      </vaadin-label> 
+      <vaadin-horizontal-layout spacing margin-left margin-right :middle :right> 
+	   <vaadin-image size-full source="icone_plus.png" _id="image_add_button" :middle :right"></vaadin-image> 
+	   <vaadin-button style-name="borderless" plain-text _id="info_button" :middle :right>
+         INFO 
+       </vaadin-button> 
+       <vaadin-button style-name="borderless" plain-text _id="logout_button" :middle :right>
+         LOGOUT 
+       </vaadin-button> 
+      </vaadin-horizontal-layout> 
+     </vaadin-horizontal-layout> 
+     <vaadin-horizontal-split-panel split-position="75%" locked> 
+      <vaadin-vertical-layout spacing size-full _id="middle_vl"> 
+       <vaadin-table selectable style-name="no-stripes" width-full multiSelect _id="table1"> 
+        <table> 
+         <colgroup> 
+          <col property-id="CLIENT NO"> 
+          <col property-id="CLIENT NAME"> 
+          <col property-id="PHONE"> 
+          <col property-id="E-MAIL"> 
+          <col property-id="CLIENT TYPE"> 
+          <col property-id="ADDRESS"> 
+         </colgroup> 
+         <tbody> 
+          <tr item-id="1"> 
+           <td>0001</td> 
+           <td>Aravinda Herath</td> 
+           <td>0774567323</td> 
+           <td>aravindah@gmail.com</td> 
+           <td>Unknown</td> 
+           <td></td> 
+          </tr> 
+          <tr item-id="2"> 
+           <td>0002</td> 
+           <td>Avantha Rathnayaka</td> 
+           <td>0773567356</td> 
+           <td>avanthara@yahoo.com</td> 
+           <td>Unknown</td> 
+           <td></td> 
+          </tr> 
+         </tbody> 
+        </table> 
+       </vaadin-table> 
+      </vaadin-vertical-layout> 
+      <vaadin-vertical-layout spacing size-full margin-left margin-right> 
+       <vaadin-vertical-layout spacing margin-top _id="button_view" :center> 
+        <vaadin-button style-name="primary" responsive width-full plain-text _id="send_email" :center>
+          SEND E-MAIL 
+        </vaadin-button> 
+        <vaadin-button style-name="primary" width-full plain-text _id="send_sms">
+          SEND SMS 
+        </vaadin-button> 
+        <vaadin-button style-name="primary" width-full plain-text _id="generate_report">
+          GENERATE REPORT 
+        </vaadin-button> 
+		</vaadin-vertical-layout> 
+       <vaadin-vertical-layout size-full :bottom :center margin-bottom> 
+        <vaadin-image source="cropped_WD.png" _id="image_right_bottom" :bottom :center margin-bottom></vaadin-image> 
+       </vaadin-vertical-layout> 
+      </vaadin-vertical-layout> 
+     </vaadin-horizontal-split-panel> 
+    </vaadin-vertical-split-panel> 
+   </vaadin-vertical-layout> 
+  </vaadin-horizontal-split-panel>  
+ </body>
+</html>

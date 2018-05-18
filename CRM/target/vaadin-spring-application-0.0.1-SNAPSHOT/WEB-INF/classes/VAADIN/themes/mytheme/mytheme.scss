@@ -1,0 +1,49 @@
+@import "../valo/valo.scss";
+
+
+@mixin mytheme {
+  @include valo;
+
+  .red {
+    color: white;
+    background: #C67171;
+  }
+  .black {
+    color:white;
+    background-color: #414a4c;
+  }
+  .blue {
+    color: deepskyblue;
+    background: transparent;
+    border: none;
+    @include box-shadow(none);
+  }
+  .blueNormalwithoutBorder {
+    color: deepskyblue;
+    background: transparent;
+    border: none;
+    @include box-shadow(none);
+  }
+  .blueNormalWithBorder {
+    color: white;
+    background: deepskyblue;
+    border: none;
+    @include box-shadow(darken);
+  }
+  .white {
+    background-color: white;
+  }
+  .layoutline {
+    background-color: transparent;
+    border: solid #414a4c;
+    border-width: 0px 0px 1px 0px;
+  }
+  .left_menu_title {
+    cursor: pointer;
+  }
+  .text_line_blue {
+    color: darkblue;
+    background-color: transparent;
+    border-width: -1px -1px 1px -1px;
+  }
+}

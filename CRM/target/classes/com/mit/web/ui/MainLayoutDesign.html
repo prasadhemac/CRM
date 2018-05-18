@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;}">
+  <meta charset="UTF-8" name="vaadin-version" content="7.7.0">
+ </head> 
+ <body> 
+  <vaadin-horizontal-layout size-full> 
+   <vaadin-vertical-layout style-name="menu-layout" spacing width="187px" height-full margin-top margin-bottom _id="menuLayout"> 
+    <vaadin-native-button icon="fonticon://FontAwesome/f0ae" style-name="menu-item selected" width-full height="50px" plain-text _id="menuButton1">
+      Employee Details 
+    </vaadin-native-button> 
+    <vaadin-native-button icon="fonticon://FontAwesome/f12e" style-name="menu-item" width-full height="50px" plain-text _id="menuButton2">
+      Salary Details 
+    </vaadin-native-button> 
+    <vaadin-native-button icon="fonticon://FontAwesome/f13e" style-name="menu-item" width-full height="50px" plain-text _id="menuButton3" :expand>
+      Deductions 
+    </vaadin-native-button> 
+   </vaadin-vertical-layout> 
+   <vaadin-panel size-full _id="contentPanel" :expand></vaadin-panel> 
+  </vaadin-horizontal-layout>  
+ </body>
+</html>
